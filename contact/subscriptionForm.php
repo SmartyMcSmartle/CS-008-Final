@@ -1,4 +1,4 @@
-<!-- Home Page --!>
+<!-- Subscription Form !-->
 <?php
 
 /* 

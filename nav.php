@@ -1,4 +1,5 @@
-<!-- Home Page --!>
+<!-- Navigation code --!>
+<!-- there needs to be a link to countries, china, france, india, japan, mexico, us, faq, contact us, and about us --!>
 <?php
 
 /* 

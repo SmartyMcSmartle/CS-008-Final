@@ -1,4 +1,4 @@
-<!-- Home Page --!>
+<!-- Bottom of every page --!>
 <?php
 
 /* 

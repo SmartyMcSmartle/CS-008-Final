@@ -1,4 +1,4 @@
-<!-- Home Page --!>
+<!-- will link to recipe form --!>
 <?php
 
 /* 

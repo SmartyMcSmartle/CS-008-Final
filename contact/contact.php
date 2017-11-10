@@ -1,4 +1,4 @@
-<!-- Home Page --!>
+<!-- link to subscription form, recipe form, and comments form --!>
 <?php
 
 /* 

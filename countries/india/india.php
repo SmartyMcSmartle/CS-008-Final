@@ -1,4 +1,4 @@
-<!-- Home Page --!>
+<!-- Recipes from India --!>
 <?php
 
 /* 

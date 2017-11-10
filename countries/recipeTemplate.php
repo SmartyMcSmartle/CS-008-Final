@@ -1,4 +1,4 @@
-<!-- Home Page --!>
+<!-- Never link to this page in the final project, it is a template --!>
 <?php
 
 /* 

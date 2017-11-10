@@ -1,4 +1,4 @@
-<!-- Home Page --!>
+<!-- Page with all country links and images --!>
 <?php
 
 /* 
