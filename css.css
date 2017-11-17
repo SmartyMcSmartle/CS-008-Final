@@ -3,4 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+*{
+    margin: 0em;
+}
 
+header{
+    color: white;
+    font-family: didot, serif;
+    font-size: 24pt;
+    text-align: center;
+    padding: 1.0em;
+    background-color: #bc5827;
+}
+
+footer{
+    background-color: #bc5827;
+    color: white;
+    padding: 0.3em;
+    font-size: 10pt;
+}
