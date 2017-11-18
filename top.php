@@ -14,12 +14,15 @@ $path_parts = pathinfo($phpSelf);
         <meta name="description" content="Recipes from around the globe">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="css.css" type="text/css" media="screen">
+        <link rel="stylesheet" 
+              href="//<?php print get_current_user(); ?>.w3.uvm.edu/cs008/finalproject/css.css" 
+              type="text/css" 
+              media="screen">
     </head>
 <?php
 print '<body id="' . $path_parts['filename'] . '">';
 
 print '<!-- Start of Body -->';
 include('header.php');
-include('nav.php');
+//include('nav.php');
 ?>
