@@ -1,5 +1,6 @@
 <!-- Subscription Form !-->
 <?php
+include('../top.php');
 //%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^
 // SECTION: 1 Initialize variables
 //
@@ -44,7 +45,7 @@ if (isset($_POST["btnSubmit"])) {
     //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     //
     // SECTION: 2a Security
-    //
+    /* need to write securityCheck function
         if (!securityCheck($thisURL)) {
         $msg = '<p>Sorry you cannot access this page.';
         $msg .= 'Security breach detected and reported.</p>';
@@ -133,7 +134,7 @@ if (isset($_POST["btnSubmit"])) {
         $subject = 'Your Regional Recipes Confirmation: ';
 
         $mailed = sendMail($to, $cc, $bcc, $from, $subject, $message);
-    }
+    }*/
 }
 
 //##############################################################################
@@ -157,12 +158,12 @@ if (isset($_POST["btnSubmit"])) {
         print'<p>For your records a copy of this data has ';
 
         if (!$mailed) {
-            print "not";
+            print "not ";
         }
         print 'been sent:</p>';
         print '<p>To: ' . $email . '</p>';
 
-        print $message;
+        //print $message;
     } else {
 
         //#################################

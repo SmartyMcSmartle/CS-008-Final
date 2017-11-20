@@ -18,6 +18,40 @@ $path_parts = pathinfo($phpSelf);
               href="//<?php print get_current_user(); ?>.w3.uvm.edu/cs008/finalproject/css.css" 
               type="text/css" 
               media="screen">
+        <?php
+            
+            $debug = false;
+
+            if(isset($_GET["debug"])){
+                $debug = true;
+            }
+            
+            //path setup
+            $domain = '//';
+            $server = htmlentities($_SERVER['SERVER_NAME'], ENT_QUOTES, 'UTF-8');
+            $domain .= $server;
+            
+            if($debug){
+                print '<p>php Self: ' . $phpSelf;
+                print '<p>Path Parts<pre>';
+                print_r($path_parts);
+                print '</pre></p>';
+            }
+            
+            //include all libraries
+            print PHP_EOL . '<!-- include libraries -->' . PHP_EOL;
+            
+            //edit to our specific requirements once we make validation functions
+            /*require_once('lib/security.php');
+            
+            if($path_parts['filename'] == "form"){
+                print PHP_EOL . '<!-- include form libraries -->' . PHP_EOL;
+                include 'lib/validation-functions.php';
+                include 'lib/mail-message.php';
+            }*/
+            
+            print PHP_EOL . '<!-- finished including libraries -->' . PHP_EOL;
+        ?>
     </head>
 <?php
 print '<body id="' . $path_parts['filename'] . '">';
