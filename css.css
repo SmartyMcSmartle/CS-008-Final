@@ -101,3 +101,26 @@ div{
         display: block;
     }
 }
+
+nav a:hover{
+    text-decoration: underline;
+    color: black;
+    background: white;
+}
+
+ul {
+    width: 250px;}
+li{
+    margin: 10px}
+ul.illuminations {
+    list-style-position: outside;}
+ul.season{
+    list-style-position: inside;}
+
+nav ol{
+    display: inline-block;
+    list-style-type: none;
+    width: 6em;
+}
+
+

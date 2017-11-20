@@ -58,5 +58,5 @@ print '<body id="' . $path_parts['filename'] . '">';
 
 print '<!-- Start of Body -->';
 include('header.php');
-//include('nav.php');
+include('nav.php');
 ?>
