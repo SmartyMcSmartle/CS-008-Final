@@ -1,4 +1,8 @@
 <?php
+$country = "";
+if (isset($_GET['country'])) {
+    $country = htmlentities($_GET['country'], ENT_QUOTES, "UTF-8");
+}
 // *** Open country data *** //
 $debug = false;
 if (isset($_GET["debug"])) {
@@ -41,13 +45,13 @@ if ($file) {
 
     // read all the data
     while (!feof($file)) {
-        $countryDetails[] = fgetcsv($file);
+        $recipeDetails[] = fgetcsv($file);
     }
 
     if ($debug) {
         print '<p>Finished reading data. File closed.</p>';
         print '<p>My data array<p><pre> ';
-        print_r($countryDetails);
+        print_r($recipeDetails);
         print '</pre></p>';
     }
 } // ends if file was opened 
@@ -55,28 +59,23 @@ if ($file) {
 fclose($file);
 include('../top.php');
 ?>
-<article id="countries">
-    <h2>Countries</h2>
+<article id="recipes">
+    <h2><?php print $country;?> Recipes</h2>
+    <table>
         <?php
-        $lastCountry = "";
-        foreach ($countryDetails as $countryDetail) {
-            if ($lastCountry != $countryDetail[1]) {
-                print '<figure class="country"><a class="country-link" href="country-detail.php?country=';
-                print str_replace(' ', '', $countryDetail[1]);
-                print '">';
-                print '<img class="country-link" alt="';
-                print str_replace(' ', '', $countryDetail[1]);
-                print '" src="../images/';
-                print str_replace(' ', '', $countryDetail[1]);
-                print '.jpg">';
-                print '</a>';
-                print '<figcaption>';
-                print $countryDetail[1];
-                print '</figcaption></figure>';
-                $lastCountry = $countryDetail[1];
+        foreach ($recipeDetails as $recipeDetail) {
+            if ($country == str_replace(' ', '', $recipeDetail[1])) {
+                print '<tr>';
+                print '<td>' . $recipeDetail[0] . '</td>';
+                print '<td>' . $recipeDetail[1] . '</td>';
+                print '<td>' . $recipeDetail[2] . '</td>';
+                print '<td>' . $recipeDetail[3] . '</td>';
+                print '</tr>';
             }
         }
+        
         ?>
+    </table>
 </article>
 <?php
 include('../footer.php');
