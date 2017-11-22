@@ -341,7 +341,7 @@ if (isset($_POST["btnSubmit"])) {
                                 value="Breakfast">Breakfast</option>
                             <option <?php if($recipeType=="Lunch") print "selected"; ?>
                                 value="Lunch">Lunch</option>
-                            <option <?php if($recipetype=="Dinner") print "selected"; ?>
+                            <option <?php if($recipeType=="Dinner") print "selected"; ?>
                                 value="Dinner">Dinner</option>
                             <option <?php if($recipeType=="Appetizer") print "selected"; ?>
                                 value="Appetizer">Appetizer</option>
