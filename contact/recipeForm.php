@@ -1,3 +1,5 @@
+<!-- Recipe Form !-->
+
 <?php
 include('../top.php');
 //%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^
@@ -78,7 +80,7 @@ if (isset($_POST["btnSubmit"])) {
     }else{
         $subscribeYes = false;
     }    
-    $dataRecord[] = $subscribeNo;
+    $dataRecord[] = $subscribeYes;
     
     if (isset($_POST["chkSubsribeNo"])){
         $subscribeNo=true;
