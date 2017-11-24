@@ -46,14 +46,14 @@ article{
     margin: 1.5em;
 }
 
-ul{
+/*ul{
     list-style-type: square;
-}
+}*/
 
-ol{
+/*ol{
     list-style-type: upper-roman;
 }
-
+*/
 li{
     padding: 2pt;
 }
@@ -108,19 +108,30 @@ nav a:hover{
     background: white;
 }
 
-ul {
-    width: 250px;}
-li{
-    margin: 10px}
-ul.illuminations {
-    list-style-position: outside;}
-ul.season{
-    list-style-position: inside;}
-
-nav ol{
-    display: inline-block;
+nav ul {
     list-style-type: none;
-    width: 6em;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: red;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
 }
 
+/*nav li a{
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
 
+nav li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+nav li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}*/

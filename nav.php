@@ -2,6 +2,7 @@
 <!-- there needs to be a link to countries, china, france, india, japan, mexico, us, faq, contact us, and about us --!>
 <!-- Start of Nav -->
 <nav>
+    <ol>
         <?php
         if ($path_parts['filename'] == 'China') {
             print 'activePage';
@@ -48,5 +49,6 @@
         }
         print '<a href="about.php">About Us</a>';
         ?>
+    </ol>
 </nav>
 <!-- End of Nav -->
