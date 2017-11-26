@@ -119,6 +119,11 @@ nav ul {
     overflow: auto;
 }
 
+nav a {
+    display: block;
+    width: 90px;
+}
+
 /*nav li a{
     display: block;
     color: #000;
