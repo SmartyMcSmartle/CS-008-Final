@@ -40,15 +40,13 @@ $path_parts = pathinfo($phpSelf);
             
             //include all libraries
             print PHP_EOL . '<!-- include libraries -->' . PHP_EOL;
-            
-            //edit to our specific requirements once we make validation functions
-            /*require_once('lib/security.php');
+            require_once('contact/lib/security.php');
             
             if($path_parts['filename'] == "form"){
                 print PHP_EOL . '<!-- include form libraries -->' . PHP_EOL;
-                include 'lib/validation-functions.php';
-                include 'lib/mail-message.php';
-            }*/
+                include 'contact/lib/validation-functions.php';
+                include 'contact/lib/mail-message.php';
+            }
             
             print PHP_EOL . '<!-- finished including libraries -->' . PHP_EOL;
         ?>

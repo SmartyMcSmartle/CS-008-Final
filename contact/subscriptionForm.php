@@ -45,7 +45,6 @@ if (isset($_POST["btnSubmit"])) {
     //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     //
     // SECTION: 2a Security
-    /* need to write securityCheck function
         if (!securityCheck($thisURL)) {
         $msg = '<p>Sorry you cannot access this page.';
         $msg .= 'Security breach detected and reported.</p>';
@@ -134,7 +133,7 @@ if (isset($_POST["btnSubmit"])) {
         $subject = 'Your Regional Recipes Confirmation: ';
 
         $mailed = sendMail($to, $cc, $bcc, $from, $subject, $message);
-    }*/
+    }
 }
 
 //##############################################################################
