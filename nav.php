@@ -3,55 +3,33 @@
 <!-- Start of Nav -->
 <nav>
     <?php
-    if ($path_parts['filename'] == 'index') {
-        print 'activePage';
-    }
-    print '<a href="../general/index.php">Home</a>';
+    print '<a class="mainlinks" href="../general/index.php">Home</a>';
+    
+    print '<a class="mainlinks" href="../countries/countries.php">Countries</a>';
+    
+    print '<a class="sublinks" href="../countries/country-detail.php?country=China">China</a>';
 
-    if ($path_parts['filename'] == 'china') {
-        print 'activePage';
-    }
-    print '<a href="../countries/country-detail.php?country=China">China</a>';
+    print '<a class="sublinks" href="../countries/country-detail.php?country=France">France</a>';
 
-    if ($path_parts['filename'] == 'france') {
-        print 'activePage';
-    }
-    print '<a href="../countries/country-detail.php?country=France">France</a>';
+    print '<a class="sublinks" href="../countries/country-detail.php?country=India">India</a>';
 
-    if ($path_parts['filename'] == 'india') {
-        print 'activePage';
-    }
-    print '<a href="../countries/country-detail.php?country=India">India</a>';
+    print '<a class="sublinks" href="../countries/country-detail.php?country=Japan">Japan</a>';
 
-    if ($path_parts['filename'] == 'japan') {
-        print 'activePage';
-    }
-    print '<a href="../countries/country-detail.php?country=Japan">Japan</a>';
+    print '<a class="sublinks" href="../countries/country-detail.php?country=Mexico">Mexico</a>';
 
-    if ($path_parts['filename'] == 'mexico') {
-        print 'activePage';
-    }
-    print '<a href="../countries/country-detail.php?country=Mexico">Mexico</a>';
+    print '<a class="sublinks" href="../countries/country-detail.php?country=USA">USA</a>';
 
-    if ($path_parts['filename'] == 'us') {
-        print 'activePage';
-    }
-    print '<a href="../countries/country-detail.php?country=USA">USA</a>';
+    print '<a class="mainlinks" href="../countries/country-detail.php?country=FAQ">FAQ</a>';
 
-    if ($path_parts['filename'] == 'faq') {
-        print 'activePage';
-    }
-    print '<a href="../countries/country-detail.php?country=FAQ">FAQ</a>';
+    print '<a class="mainlinks" href="../countries/country-detail.php?country=About Us">Contact Us</a>';
 
-    if ($path_parts['filename'] == 'contact') {
-        print 'activePage';
-    }
-    print '<a href="../countries/country-detail.php?country=About Us">Contact Us</a>';
+    print '<a class="sublinks" href="../contact/recipeForm.php">Add a Recipe</a>';
+    
+    print '<a class="sublinks" href="../contact/subscriptionForm.php">Subscribe</a>';
 
-    if ($path_parts['filename'] == 'about') {
-        print 'activePage';
-    }
-    print '<a href="../countries/country-detail.php?country=About Us">About Us</a>';
+    print '<a class="sublinks" href="../contact/commentForm.php">Comments</a>';
+
+    print '<a class="mainlinks" href="../countries/country-detail.php?country=About Us">About Us</a>';
     ?>
 </nav>
 <!-- End of Nav -->
