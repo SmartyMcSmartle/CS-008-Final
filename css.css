@@ -99,6 +99,13 @@ div{
     display: inline-block;
 }
 
+.logo{
+    max-width: 150px;
+    float: left;
+    margin-top: -15px;
+    margin-left: -5px;
+}
+
 @media only screen and (max-width: 497px) {
     .img-right {
         clear: right;
