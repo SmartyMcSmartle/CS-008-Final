@@ -134,7 +134,26 @@ nav ul {
 
 nav a {
     display: block;
-    width: 90px;
+    width: 100px;
+    font-family: didot;
+    color: black; 
+}
+
+nav{
+    width: 10em;
+    float: left;
+}
+
+footer {
+    clear: both;
+}
+
+.sublinks {
+    margin: 0.5em;
+}
+
+.mainlinks {
+    font-weight: bold;
 }
 
 /*nav li a{
