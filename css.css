@@ -134,7 +134,7 @@ nav ul {
 
 nav a {
     display: block;
-    width: 100px;
+    width: 110px;
     font-family: didot;
     color: black; 
 }
@@ -142,6 +142,7 @@ nav a {
 nav{
     width: 10em;
     float: left;
+    background-color: #cd842a;
 }
 
 footer {
@@ -149,11 +150,13 @@ footer {
 }
 
 .sublinks {
-    margin: 0.5em;
+    margin-left: 1.5em;
 }
 
 .mainlinks {
     font-weight: bold;
+    color: white;
+    font-size: 15pt;
 }
 
 /*nav li a{
