@@ -68,10 +68,17 @@ include('../top.php');
             </figure>
             <h3>Ingredients</h3>
             <ul>
-                <li>Ingredient</li>
-                <li>Ingredient</li>
-                <li>Ingredient</li>
-                <li>Ingredient</li>
+                <?php
+                    foreach($recipeDetails as $recipeDetail){
+                        if(str_replace(' ', '', $recipeDetail[0]) == $recipe){
+                            for($i = 2; $i <= 3; $i++){
+                                if($recipeDetail[$i] != null){
+                                    print '<li>' . $recipeDetail[$i] . '</li>';
+                                }
+                            }
+                        }
+                    }
+                ?>
             </ul>
             <h3>Instructions</h3>
             <ol>
