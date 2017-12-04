@@ -252,7 +252,7 @@ if (isset($_POST["btnSubmit"])) {
         //
         // SECTION: 3c html form
         ?>
-
+    <h2>Have a recipe you want to share with us? Please fill out this form to tell us about it!</h2>
         <form action="<?php print $phpSelf; ?>"
               id="frmRegister"
               method="post">       

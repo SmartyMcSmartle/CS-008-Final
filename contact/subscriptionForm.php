@@ -188,7 +188,7 @@ if (isset($_POST["btnSubmit"])) {
         //
         // SECTION: 3c html form
         ?>
-
+    <h2>Register for Email Updates from Regional Recipes</h2>
         <form action="<?php print $phpSelf; ?>"
               id="frmRegister"
               method="post">       

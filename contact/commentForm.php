@@ -293,7 +293,7 @@ if (isset($_POST["btnSubmit"])) {
         //
         // SECTION: 3c html form
         ?>
-
+    <h2>Please let us know your feedback!</h2>
         <form action="<?php print $phpSelf; ?>"
               id="frmRegister"
               method="post">       
