@@ -9,7 +9,7 @@
 }
 
 body{
-    background-color: #e8dcb5;
+    background-color: #cd842a;
 }
 
 header{
@@ -51,6 +51,9 @@ h3{
 
 article{
     margin: 1.5em;
+    margin-left: 13em;
+    padding-left: 1em;
+    background-color: #e8dcb5;
 }
 
 ul{
@@ -145,6 +148,7 @@ nav{
     float: left;
     background-color: #cd842a;
     margin-right: 3em;
+    overflow: auto;
 }
 
 footer {
@@ -187,4 +191,8 @@ fieldset {
 #form txt{
     min-width: 20%;
     padding: .4em;
+}
+
+body, html{
+    height: 100%;
 }
