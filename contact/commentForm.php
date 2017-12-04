@@ -81,10 +81,10 @@ if (isset($_POST["btnSubmit"])) {
     $comments = htmlentities($_POST["txtComments"], ENT_QUOTES, "UTF-8");
     $dataRecord[] = $comments;
 
-    $function = htlmentities($_POST["radFunction"], ENT_QUOTES, "UTF-8");
+    $function = htmlentities($_POST["radFunction"], ENT_QUOTES, "UTF-8");
     $dataRecord[] = $function;
 
-    $style = htlmentities($_POST["radStyle"], ENT_QUOTES, "UTF-8");
+    $style = htmlentities($_POST["radStyle"], ENT_QUOTES, "UTF-8");
     $dataRecord[] = $style;
 
     if (isset($_POST["chkFriend"])) {
