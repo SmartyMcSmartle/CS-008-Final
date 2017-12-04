@@ -63,7 +63,7 @@ include('../top.php');
         <article>
             <h2><?php print $recipe ?></h2>
             <figure class="img-right">
-                <img alt="Recipe" src=<?php print $image_src ?>>
+                <img class="recipe-picture" alt="Recipe" src=<?php print $image_src ?>>
                 <figcaption>Source</figcaption>
             </figure>
             <h3>Ingredients</h3>

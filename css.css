@@ -41,6 +41,7 @@ h2{
     font-size: 22pt;
     margin: auto;
     text-align: center;
+    padding: 0.5em;
 }
 
 h3{
@@ -50,7 +51,6 @@ h3{
 }
 
 article{
-    margin: 1.5em;
     margin-left: 13em;
     padding-left: 1em;
     background-color: #e8dcb5;
@@ -95,8 +95,8 @@ div{
     margin: auto;
 }
 
-.country-link, .recipe-link{
-    max-width: 400px;
+.country-link, .recipe-link, .recipe-picture{
+    max-width: 300px;
 }
 
 .country, .recipe{
