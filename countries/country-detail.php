@@ -64,11 +64,14 @@ include('../top.php');
     <?php
         foreach ($recipeDetails as $recipeDetail) {
             if ($country == str_replace(' ', '', $recipeDetail[1])) {
-                print '<a href="recipe-detail.php?recipe=';
+                print '<figure class="recipe"><a class="recipe-link" href="recipe-detail.php?recipe=';
                 print str_replace(' ', '', $recipeDetail[0]);
                 print '">';
-                print $recipeDetail[0];
-                print '</a>';
+                print '<img class="recipe-link" alt="' . $recipeDetail[0];
+                print '" src="../images/' . str_replace(' ', '', $recipeDetail[0]);
+                print '.jpg">';
+                print '</a><figcaption>' . $recipeDetail[0];
+                print '</figcaption></figure>';
             }
         }   
     ?>
