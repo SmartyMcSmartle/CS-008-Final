@@ -179,4 +179,11 @@ nav li a:hover:not(.active) {
 
 fieldset {
     border: none;
+    font-family: didot;
+}
+
+#form input,
+#form txt{
+    min-width: 20%;
+    padding: .4em;
 }

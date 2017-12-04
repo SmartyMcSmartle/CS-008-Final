@@ -516,6 +516,7 @@ if (isset($_POST["btnSubmit"])) {
     ?>
 
 </article>
+<?php include '../footer.php';?>
 </body>
 </html>
 
