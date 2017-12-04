@@ -53,14 +53,14 @@ article{
     margin: 1.5em;
 }
 
-/*ul{
+ul{
     list-style-type: square;
-}*/
+}
 
-/*ol{
+ol{
     list-style-type: upper-roman;
 }
-*/
+
 li{
     padding: 2pt;
 }
@@ -144,6 +144,7 @@ nav{
     width: 10em;
     float: left;
     background-color: #cd842a;
+    margin-right: 3em;
 }
 
 footer {
