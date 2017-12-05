@@ -318,12 +318,16 @@ if (isset($_POST["btnSubmit"])) {
             <fieldset class="textarea">
                 <p>
                     <label  class="required" for="txtComments">Comments</label>
-                    <textarea <?php if ($commentsERROR) print 'class="mistake"'; ?>
+                </p>
+                    <p>
+                        <textarea <?php if ($commentsERROR) print 'class="mistake"'; ?>
                         id="txtComments" 
                         name="txtComments" 
                         onfocus="this.select()" 
-                        tabindex="200"><?php print $comments; ?></textarea>
-                </p>
+                        tabindex="200"
+                        rows="4"
+                        cols="75"><?php print $comments; ?></textarea>
+                    </p>
             </fieldset>
 
             <fieldset class="radio <?php if ($functionERROR) print 'mistake'; ?>">

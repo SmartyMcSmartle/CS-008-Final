@@ -124,9 +124,11 @@ if (isset($_POST["btnSubmit"])) {
         $recipeNameERROR = true;
     }
     
-    if ($recipeInfo == "") {
-        $errorMsg[] = 'Please enter information for the recipe';
-        $recipeInfoERROR = true;
+    if ($recipeInfo != "") {
+        if (!verifyAlphaNum($recipeInfo)) {
+            $errorMsg[] = "Your comment appears to have extra characters that are not allowed.";
+            $recipeInfoERROR = true;
+        }
     }
     
     if ($recipeType == "") {
@@ -317,21 +319,17 @@ if (isset($_POST["btnSubmit"])) {
             </fieldset>
             
             <fieldset class="info">
-                <legend>Recipe Information</legend>                   
                 <p>
-                    <label class="required" for="txtRecipeInfo">Recipe Yield/Ingredients/Instructions</label>
-                    <input
-                        
-                    <?php if ($recipeInfoERROR) print 'class="mistake"'; ?>
-                        id="txtRecipeInfo"
-                        maxlength="45"
-                        name="txtRecipeInfo"
-                        onfocus="this.select()"
-                        placeholder="Enter recipe information"
-                        tabindex="120"
-                        type="text"
-                        value="<?php print $recipeInfo; ?>"
-                        >
+                    <label  class="required" for="txtRecipeInfo">Recipe Ingredients and Instructions</label>
+                </p>
+                <p>    
+                    <textarea <?php if ($recipeInfoERROR) print 'class="mistake"'; ?>
+                        id="txtRecipeInfo" 
+                        name="txtRecipeInfo" 
+                        onfocus="this.select()" 
+                        tabindex="200"
+                        rows="4"
+                        cols="75"><?php print $recipeInfo; ?></textarea>
                 </p>
             </fieldset>
             

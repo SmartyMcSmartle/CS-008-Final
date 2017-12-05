@@ -187,10 +187,8 @@ fieldset {
     font-family: didot;
 }
 
-#form input,
-#form txt{
-    min-width: 20%;
-    padding: .4em;
+#form p{
+    margin-left: 100px;
 }
 
 body, html{
