@@ -20,7 +20,7 @@ $thisURL = $domain . $phpSelf;
 //%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^
 //
 // SECTION: 1c form variables
-$email = "";
+$email = "ebambury@uvm.edu";
 $subscribeYes = true;
 $subscribeNo = false;
 $recipeName = "";
@@ -48,6 +48,8 @@ $errorMsg = array();
 $dataRecord = array();
 // have we mailed the information to the user?
 $mailed = false;
+
+
 
 //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 //
@@ -92,7 +94,7 @@ if (isset($_POST["btnSubmit"])) {
     $recipeName = htmlentities($_POST["txtRecipeName"], ENT_QUOTES, "UTF-8");
     $dataRecord[] = $recipeName;
 
-    $recipeInfo = htmlentities($_POTS["txtRecipeInfo"], ENT_QUOTES, "UTF-8");
+    $recipeInfo = htmlentities($_POST["txtRecipeInfo"], ENT_QUOTES, "UTF-8");
     $dataRecord[] = $recipeInfo;
     
     $recipeType = htmlentities($_POST["lstRecipeType"],ENT_QUOTES,"UTF-8");    
@@ -104,7 +106,7 @@ if (isset($_POST["btnSubmit"])) {
 //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     //
    // SECTION: 2c Validation
-    if ($email == "") {
+    if ($email == ""){
         $errorMsg[] = 'Please enter your email address';
         $emailERROR = true;
     } elseif (!verifyEmail($email)) {
@@ -146,7 +148,7 @@ if (isset($_POST["btnSubmit"])) {
         //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
         // 
         // SECTION: 2e Save Data
-        $myFolder = 'final project/';
+        $myFolder = 'finalproject/';
 
         $myFileName = 'recipes';
 
@@ -319,6 +321,7 @@ if (isset($_POST["btnSubmit"])) {
                 <p>
                     <label class="required" for="txtRecipeInfo">Recipe Yield/Ingredients/Instructions</label>
                     <input
+                        
                     <?php if ($recipeInfoERROR) print 'class="mistake"'; ?>
                         id="txtRecipeInfo"
                         maxlength="45"
