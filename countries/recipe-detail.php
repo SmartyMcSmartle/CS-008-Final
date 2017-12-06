@@ -80,7 +80,7 @@ include('../top.php');
                     }
                 ?>
             </ul>
-            <h3>Instructions</h3>
+            <h3 class="stepsHeader">Instructions</h3>
             <ol>
                 <?php
                     foreach($recipeDetails as $recipeDetail){
