@@ -78,8 +78,9 @@ a{
 }
 
 figcaption{
-    font-size: 6pt;
+    font-size: 14pt;
     text-align: center;
+    margin-bottom: 1em;
 }
 
 div{
