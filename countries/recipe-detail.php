@@ -71,7 +71,7 @@ include('../top.php');
                 <?php
                     foreach($recipeDetails as $recipeDetail){
                         if(str_replace(' ', '', $recipeDetail[0]) == $recipe){
-                            for($i = 2; $i <= 18; $i++){
+                            for($i = 2; $i <= 24; $i++){
                                 if($recipeDetail[$i] != null){
                                     print '<li>' . $recipeDetail[$i] . '</li>';
                                 }
@@ -85,7 +85,7 @@ include('../top.php');
                 <?php
                     foreach($recipeDetails as $recipeDetail){
                         if(str_replace(' ', '', $recipeDetail[0]) == $recipe){
-                            for($i = 19; $i <= 29; $i++){
+                            for($i = 25; $i <= 36; $i++){
                                 if($recipeDetail[$i] != null){
                                     print '<li>' . $recipeDetail[$i] . '</li>';
                                 }
