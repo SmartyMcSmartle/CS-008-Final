@@ -19,9 +19,9 @@
 
     print '<a class="sublinks" href="../countries/country-detail.php?country=USA">USA</a>';
 
-    print '<a class="mainlinks" href="../countries/country-detail.php?country=FAQ">FAQ</a>';
+    print '<a class="mainlinks" href="../general/faq.php">FAQ</a>';
 
-    print '<a class="mainlinks" href="../countries/country-detail.php?country=About Us">Contact Us</a>';
+    print '<a class="mainlinks" href="../contact/contact.php">Contact Us</a>';
 
     print '<a class="sublinks" href="../contact/recipeForm.php">Add a Recipe</a>';
     
@@ -29,7 +29,7 @@
 
     print '<a class="sublinks" href="../contact/commentForm.php">Comments</a>';
 
-    print '<a class="mainlinks" href="../countries/country-detail.php?country=About Us">About Us</a>';
+    print '<a class="mainlinks" href="../general/about.php">About Us</a>';
     ?>
 </nav>
 <!-- End of Nav -->
