@@ -42,7 +42,9 @@ $path_parts = pathinfo($phpSelf);
             print PHP_EOL . '<!-- include libraries -->' . PHP_EOL;
             require_once('contact/lib/security.php');
             
-            if($path_parts['filename'] == "form"){
+            if($path_parts['filename'] == "recipeForm" or 
+                    $path_parts['filename'] == "subscriptionForm" or
+                    $path_parts['filename'] == "commentForm"){
                 print PHP_EOL . '<!-- include form libraries -->' . PHP_EOL;
                 include 'contact/lib/validation-functions.php';
                 include 'contact/lib/mail-message.php';
