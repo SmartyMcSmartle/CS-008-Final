@@ -4,7 +4,7 @@ include('../top.php');
 <article>
     <h2>Welcome to Regional Recipes!</h2>
     <figure class="img-left">
-        <a class="recipe-link" 
+        <a class="recipe-link"
            href="../countries/recipe-detail.php?recipe=ChocolateChipCookies">
             <img class="img-left" alt="Chocolate Chip Cookies" 
                  src="../images/ChocolateChipCookies.jpg">

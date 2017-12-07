@@ -209,3 +209,9 @@ fieldset {
 body, html{
     height: 100%;
 }
+
+.people {
+    max-width: 100px;
+    float: right;
+    max-width: 150px;
+}

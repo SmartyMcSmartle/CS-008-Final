@@ -5,9 +5,12 @@ include ('../top.php');
 
 <article> 
     <h3>Sarah McLaughlin</h3>
-    <figure class="img-left small">
-        <img src="../images/Liz.jpg" alt="Image of Sarah McLaughlin">
-        <br><span class="smalltext">Photo taken by UVM Career Center</span>
+    <figure class="img-right small">
+        <a class="people" 
+           href="../general/about.php">
+            <img class="img-right" alt="Sarah McLaughlin" 
+                 src="../images/Liz.jpg">
+        </a>
     </figure>
     <p>Sarah is the lead web developer for Regional Recipes. She is from Needham, 
         Massachusetts and is currently a freshman at the University of Vermont. 
@@ -23,9 +26,12 @@ include ('../top.php');
         together every year. </p>
 
     <h3>Elizabeth Bambury</h3>
-    <figure class="img-left small">
-        <img src="../images/Liz.jpg" alt="Image of Sarah McLaughlin">
-             <br><span class="smalltext">Photo taken UVM Career Center</span>
+    <figure class="img-right small">
+        <a class="people" 
+           href="../general/about.php">
+            <img class="img-right" alt="Elizabeth Bambury" 
+                 src="../images/Liz.jpg">
+        </a>
     </figure>
     <p>Liz Bambury is a junior web developer for Regional Recipes. 
         She is from Andover, Massachusetts and is currently a junior at the 
@@ -43,10 +49,13 @@ include ('../top.php');
         society as well as her love for cooking. Her favorite regional cuisine to 
         cook and enjoy is Indian food.</p>
 
-        <h3>Julia Beatty</h3>
-    <figure class="img-left small">
-        <img src="../images/Julia.jpg" alt="Image of Julia Beatty"
-             <br><span class="smalltext">Photo taken by Zoey Christensen</span>
+    <h3>Julia Beatty</h3>
+    <figure class="img-right small">
+        <a class="people" 
+           href="../general/about.php">
+            <img class="img-right" alt="Julia Beatty" 
+                 src="../images/Julia.jpg">
+        </a>
     </figure>
     <p>Julia Beatty is a junior web designer for Regional Recipes. She is a 
         senior at the University of Vermont. She is majoring in Chinese with 
