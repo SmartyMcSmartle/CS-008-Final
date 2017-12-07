@@ -54,6 +54,7 @@ article{
     margin-left: 13em;
     padding-left: 1em;
     padding-bottom: 1em;
+    padding-right: 1em;
     background-color: #e8dcb5;
 }
 
@@ -71,6 +72,7 @@ li{
 
 img{
     padding: 0em;
+    max-width: 100%;
 }
 
 a{
@@ -93,25 +95,23 @@ div{
     float: right;
 }
 
+.img-left{
+    float: left;
+    max-width: 550px;
+    padding-right: 1em;
+    padding-top: 0em;
+}
+
 .recipe-link{
     margin: auto;
 }
 
-.country-link, .recipe-link{
-    max-width: 300px;
-}
-
-.recipe-picture{
-    margin-right: 1.5em;
+.country-link, .recipe-link, .recipe-picture{
     max-width: 300px;
 }
 
 .stepsHeader{
     margin-top: 0.75em;
-}
-
-.instructions{
-    margin-right: 1.5em;
 }
 
 .country, .recipe{
@@ -209,9 +209,5 @@ fieldset {
 body, html{
     height: 100%;
 }
-
-img{
-    max-width: 10%;
-    }
     
     

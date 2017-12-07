@@ -81,7 +81,7 @@ include('../top.php');
                 ?>
             </ul>
             <h3 class="stepsHeader">Instructions</h3>
-            <ol class="instructions">
+            <ol>
                 <?php
                     foreach($recipeDetails as $recipeDetail){
                         if(str_replace(' ', '', $recipeDetail[0]) == $recipe){
