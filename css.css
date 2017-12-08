@@ -130,8 +130,6 @@ span{
 .logo{
     max-width: 150px;
     float: left;
-    margin-top: -15px;
-    margin-left: -25px;
 }
 
 @media only screen and (max-width: 552px) {
