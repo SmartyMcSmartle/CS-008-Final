@@ -7,9 +7,9 @@ include('../top.php');
 // SECTION: 1a.
 // We print out the post array so that we can see our form is working.
 // if ($debug){ // later you can uncomment the if statement
-print '<p>Post Array:</p><pre>';
-print_r($_POST);
-print '</pre>';
+//print '<p>Post Array:</p><pre>';
+//print_r($_POST);
+//print '</pre>';
 // }
 //%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^
 //
@@ -82,7 +82,7 @@ if (isset($_POST["btnSubmit"])) {
         //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
         // 
         // SECTION: 2e Save Data
-        $myFolder = 'finalproject/';
+        $myFolder = '../';
 
         $myFileName = 'recipes';
 
@@ -125,7 +125,7 @@ if (isset($_POST["btnSubmit"])) {
         // the message was built in section 2f.
         $to = $email; // the person who filled out the form
         $cc = '';
-        $bcc = '';
+        $bcc = 'ebambury@uvm.edu';
 
         $from = 'Regional Recipes <ebambury@uvm.edu>';
 
@@ -192,8 +192,7 @@ if (isset($_POST["btnSubmit"])) {
         <form action="<?php print $phpSelf; ?>"
               id="frmRegister"
               method="post">       
-            <fieldset class="contact">
-                <legend>Contact Information</legend>                   
+            <fieldset class="contact">                 
                 <p>
                     <label class="required" for="txtEmail">Email</label>
                     <input
@@ -202,7 +201,7 @@ if (isset($_POST["btnSubmit"])) {
                         maxlength="45"
                         name="txtEmail"
                         onfocus="this.select()"
-                        placeholder="Enter a valid email address"
+                        placeholder=""
                         tabindex="120"
                         type="text"
                         value="<?php print $email; ?>"

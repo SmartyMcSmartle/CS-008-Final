@@ -8,9 +8,9 @@ include('../top.php');
 // SECTION: 1a.
 // We print out the post array so that we can see our form is working.
 // if ($debug){ // later you can uncomment the if statement
-print '<p>Post Array:</p><pre>';
-print_r($_POST);
-print '</pre>';
+//print '<p>Post Array:</p><pre>';
+//print_r($_POST);
+//print '</pre>';
 // }
 //%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^
 //
@@ -20,9 +20,8 @@ $thisURL = $domain . $phpSelf;
 //%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^
 //
 // SECTION: 1c form variables
-$email = "ebambury@uvm.edu";
+$email = "";
 $subscribeYes = true;
-$subscribeNo = false;
 $recipeName = "";
 $recipeInfo = "";
 $recipeType = "";
@@ -82,14 +81,6 @@ if (isset($_POST["btnSubmit"])) {
         $subscribeYes = false;
     }    
     $dataRecord[] = $subscribeYes;
-    
-    if (isset($_POST["chkSubsribeNo"])){
-        $subscribeNo=true;
-        $totalCheckedSubscribe++;
-    }else{
-        $subscribeNo = false;
-    }    
-    $dataRecord[] = $subscribeNo;
 
     $recipeName = htmlentities($_POST["txtRecipeName"], ENT_QUOTES, "UTF-8");
     $dataRecord[] = $recipeName;
@@ -114,11 +105,6 @@ if (isset($_POST["btnSubmit"])) {
         $emailERROR = true;
     }
 
-    if($totalCheckedSubscribe<1){
-        $errorMsg[] = "Please check Yes or No";
-        $subscribeERROR=true;
-    }
-    
      if ($recipeName == "") {
         $errorMsg[] = 'Please enter a name for the recipe';
         $recipeNameERROR = true;
@@ -150,7 +136,7 @@ if (isset($_POST["btnSubmit"])) {
         //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
         // 
         // SECTION: 2e Save Data
-        $myFolder = 'finalproject/';
+        $myFolder = '../';
 
         $myFileName = 'recipes';
 
@@ -193,7 +179,7 @@ if (isset($_POST["btnSubmit"])) {
         // the message was built in section 2f.
         $to = $email; // the person who filled out the form
         $cc = '';
-        $bcc = '';
+        $bcc = 'ebambury@uvm.edu';
 
         $from = 'Regional Recipes <ebambury@uvm.edu>';
 
@@ -260,8 +246,7 @@ if (isset($_POST["btnSubmit"])) {
         <form action="<?php print $phpSelf; ?>"
               id="frmRegister"
               method="post">       
-            <fieldset class="contact">
-                <legend>Contact Information</legend>                   
+            <fieldset class="contact">                  
                 <p>
                     <label class="required" for="txtEmail">Email</label>
                     <input
@@ -270,7 +255,7 @@ if (isset($_POST["btnSubmit"])) {
                         maxlength="45"
                         name="txtEmail"
                         onfocus="this.select()"
-                        placeholder="Enter a valid email address"
+                        placeholder=""
                         tabindex="120"
                         type="text"
                         value="<?php print $email; ?>"
@@ -289,28 +274,19 @@ if (isset($_POST["btnSubmit"])) {
                                 type="checkbox"
                                 value="Yes">Yes</label>
                     </p>
-                    <p>
-                        <label class="check-field">
-                            <input <?php if($subscribeNo) print "checked"; ?>
-                                id="chkSubscribeNo"
-                                name="chkSubscribeNo"
-                                tabindex="420"
-                                type="checkbox"
-                                value="No">No</label>
-                    </p>
             </fieldset>
             
             <fieldset class="name">
                 <legend>Recipe Name</legend>                   
                 <p>
-                    <label class="required" for="txtRecipeName">Recipe Name</label>
+                    <label class="required" for="txtRecipeName"></label>
                     <input
                     <?php if ($recipeNameERROR) print 'class="mistake"'; ?>
                         id="txtRecipeName"
                         maxlength="45"
                         name="txtRecipeName"
                         onfocus="this.select()"
-                        placeholder="Enter a recipe name"
+                        placeholder=""
                         tabindex="120"
                         type="text"
                         value="<?php print $recipeName; ?>"
