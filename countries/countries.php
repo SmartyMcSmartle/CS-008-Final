@@ -62,12 +62,12 @@ include('../top.php');
         foreach ($countryDetails as $countryDetail) {
             if ($lastCountry != $countryDetail[1]) {
                 print '<figure class="country"><a class="country-link" href="country-detail.php?country=';
-                print str_replace(' ', '', $countryDetail[1]);
+                print str_replace('_', ' ', $countryDetail[1]);
                 print '">';
                 print '<img class="country-link" alt="';
-                print str_replace(' ', '', $countryDetail[1]);
+                print str_replace('_', ' ', $countryDetail[1]);
                 print '" src="../images/';
-                print str_replace(' ', '', $countryDetail[1]);
+                print str_replace('_', ' ', $countryDetail[1]);
                 print '.jpg">';
                 print '</a>';
                 print '<figcaption>';

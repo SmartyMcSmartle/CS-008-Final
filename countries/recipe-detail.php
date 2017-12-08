@@ -57,7 +57,7 @@ if ($file) {
 } // ends if file was opened 
 fclose($file);
 
-$image_src = "../images/" . $recipe . ".jpg";
+$image_src = "../images/" . str_replace(' ', '_', $recipe) . ".jpg";
 include('../top.php');
 ?>
         <article>
@@ -67,7 +67,7 @@ include('../top.php');
                 <figcaption class="picture-source">
                     <?php
                         foreach($recipeDetails as $recipeDetail){
-                        if(str_replace(' ', '', $recipeDetail[0]) == $recipe){
+                        if(str_replace('_', ' ', $recipeDetail[0]) == $recipe){
                             print $recipeDetail[3];
                         }
                     }
@@ -78,7 +78,7 @@ include('../top.php');
             <ul>
                 <?php
                     foreach($recipeDetails as $recipeDetail){
-                        if(str_replace(' ', '', $recipeDetail[0]) == $recipe){
+                        if(str_replace('_', ' ', $recipeDetail[0]) == $recipe){
                             for($i = 5; $i <= 27; $i++){
                                 if($recipeDetail[$i] != null){
                                     print '<li>' . $recipeDetail[$i] . '</li>';
@@ -92,7 +92,7 @@ include('../top.php');
             <ol>
                 <?php
                     foreach($recipeDetails as $recipeDetail){
-                        if(str_replace(' ', '', $recipeDetail[0]) == $recipe){
+                        if(str_replace('_', ' ', $recipeDetail[0]) == $recipe){
                             for($i = 28; $i <= 37; $i++){
                                 if($recipeDetail[$i] != null){
                                     print '<li>' . $recipeDetail[$i] . '</li>';
@@ -106,7 +106,7 @@ include('../top.php');
             <p>
                 <?php
                     foreach($recipeDetails as $recipeDetail){
-                        if(str_replace(' ', '', $recipeDetail[0]) == $recipe){
+                        if(str_replace('_', ' ', $recipeDetail[0]) == $recipe){
                             print $recipeDetail[2];
                         }
                     }
@@ -116,7 +116,7 @@ include('../top.php');
             <p class="recipe-source">
                 <?php
                     foreach($recipeDetails as $recipeDetail){
-                        if(str_replace(' ', '', $recipeDetail[0]) == $recipe){
+                        if(str_replace('_', ' ', $recipeDetail[0]) == $recipe){
                             print $recipeDetail[4];
                         }
                     }
