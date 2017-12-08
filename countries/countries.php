@@ -55,7 +55,7 @@ if ($file) {
 fclose($file);
 include('../top.php');
 ?>
-<article id="countries">
+<article>
     <h2>Countries</h2>
         <?php
         $lastCountry = "";
@@ -90,7 +90,7 @@ include('../top.php');
                     $countryimgsource = "https://mickeysdreamvacationsbylissy.files.wordpress.com/2016/02/adventures-by-disney-north-america-san-francisco-long-weekend-hero-01-golden-gate-bridge.jpg?w=611";
                 }
                 print $countryDetail[1];
-                print '</br><span>' . $countryimgsource . '</span>';
+                print '<span><br>' . $countryimgsource . '</span>';
                 print '</figcaption></figure>';
                 $lastCountry = $countryDetail[1];
             }
