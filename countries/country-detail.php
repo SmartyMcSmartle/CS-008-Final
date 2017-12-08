@@ -65,7 +65,7 @@ include('../top.php');
         foreach ($recipeDetails as $recipeDetail) {
             if ($country == str_replace(' ', '_', $recipeDetail[1])) {
                 print '<figure class="recipe"><a class="recipe-link" href="recipe-detail.php?recipe=';
-                print str_replace('_', ' ', $recipeDetail[0]);
+                print str_replace(' ', '_', $recipeDetail[0]);
                 print '">';
                 print '<img class="recipe-link" alt="' . $recipeDetail[0];
                 print '" src="../images/' . str_replace(' ', '_', $recipeDetail[0]);
