@@ -84,7 +84,7 @@ if (isset($_POST["btnSubmit"])) {
         // SECTION: 2e Save Data
         $myFolder = '../';
 
-        $myFileName = 'recipes';
+        $myFileName = 'form';
 
         $fileExt = '.csv';
 
