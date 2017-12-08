@@ -71,7 +71,27 @@ include('../top.php');
                 print '.jpg">';
                 print '</a>';
                 print '<figcaption>';
+                $countryimgsource;
+                if($countryDetail[1] == 'China') {
+                    $countryimgsource = "https://yullow.files.wordpress.com/2015/02/cropped-6797128-great-wall-of-china-wallpaper.jpg";
+                }
+                else if($countryDetail[1] == 'France'){
+                    $countryimgsource = "https://2.bp.blogspot.com/-YNpI71_jAPY/WgADv8HHd0I/AAAAAAAABTI/-WIB965enN8YR4EyxS1Z2oZaV0e8D1XXACPcBGAYYCw/s1600/eiffel.jpg";
+                }
+                else if($countryDetail[1] == 'India'){
+                    $countryimgsource = "http://pic.qyer.com/album/user/1170/55/QEhSQh8CZE0/index/680x";
+                }
+                else if($countryDetail[1] == 'Japan'){
+                    $countryimgsource = "https://travel.gaijinpot.com/wp-content/uploads/sites/6/2016/01/Wakayama.jpg";
+                }
+                else if($countryDetail[1] == 'Mexico'){
+                    $countryimgsource = "https://hypb.imgix.net/image/2017/06/mexico-city-0.jpg?q=90&amp%3Bauto=compress%2Cformat";
+                }
+                else if($countryDetail[1] == 'USA'){
+                    $countryimgsource = "https://mickeysdreamvacationsbylissy.files.wordpress.com/2016/02/adventures-by-disney-north-america-san-francisco-long-weekend-hero-01-golden-gate-bridge.jpg?w=611";
+                }
                 print $countryDetail[1];
+                print '</br><span>' . $countryimgsource . '</span>';
                 print '</figcaption></figure>';
                 $lastCountry = $countryDetail[1];
             }

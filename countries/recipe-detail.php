@@ -113,7 +113,7 @@ include('../top.php');
                 ?>
             </p>
             
-            <p>
+            <p class="recipe-source">
                 <?php
                     foreach($recipeDetails as $recipeDetail){
                         if(str_replace(' ', '', $recipeDetail[0]) == $recipe){
