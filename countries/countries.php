@@ -84,7 +84,7 @@ include('../top.php');
                     $countryimgsource = "https://travel.gaijinpot.com/wp-content/uploads/sites/6/2016/01/Wakayama.jpg";
                 }
                 else if($countryDetail[1] == 'Mexico'){
-                    $countryimgsource = "https://hypb.imgix.net/image/2017/06/mexico-city-0.jpg?q=90&amp%3Bauto=compress%2Cformat";
+                    $countryimgsource = "http://www.nationsonline.org/gallery/Mexico/Beach-of-Cancun.jpg";
                 }
                 else if($countryDetail[1] == 'USA'){
                     $countryimgsource = "https://mickeysdreamvacationsbylissy.files.wordpress.com/2016/02/adventures-by-disney-north-america-san-francisco-long-weekend-hero-01-golden-gate-bridge.jpg?w=611";
