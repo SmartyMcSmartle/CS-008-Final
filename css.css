@@ -118,6 +118,10 @@ div{
     display: inline-block;
 }
 
+.picture-source{
+    font-size: 3pt;
+}
+
 .logo{
     max-width: 150px;
     float: left;

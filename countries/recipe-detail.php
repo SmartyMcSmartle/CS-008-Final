@@ -64,14 +64,22 @@ include('../top.php');
             <h2><?php print $recipe ?></h2>
             <figure class="img-right">
                 <img class="recipe-picture" alt="Recipe" src=<?php print $image_src ?>>
-                <figcaption>Source</figcaption>
+                <figcaption class="picture-source">
+                    <?php
+                        foreach($recipeDetails as $recipeDetail){
+                        if(str_replace(' ', '', $recipeDetail[0]) == $recipe){
+                            print $recipeDetail[3];
+                        }
+                    }
+                    ?>
+                </figcaption>
             </figure>
             <h3>Ingredients</h3>
             <ul>
                 <?php
                     foreach($recipeDetails as $recipeDetail){
                         if(str_replace(' ', '', $recipeDetail[0]) == $recipe){
-                            for($i = 4; $i <= 26; $i++){
+                            for($i = 5; $i <= 27; $i++){
                                 if($recipeDetail[$i] != null){
                                     print '<li>' . $recipeDetail[$i] . '</li>';
                                 }
@@ -85,7 +93,7 @@ include('../top.php');
                 <?php
                     foreach($recipeDetails as $recipeDetail){
                         if(str_replace(' ', '', $recipeDetail[0]) == $recipe){
-                            for($i = 27; $i <= 36; $i++){
+                            for($i = 28; $i <= 37; $i++){
                                 if($recipeDetail[$i] != null){
                                     print '<li>' . $recipeDetail[$i] . '</li>';
                                 }
