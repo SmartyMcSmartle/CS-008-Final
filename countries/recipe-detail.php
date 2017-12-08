@@ -112,6 +112,16 @@ include('../top.php');
                     }
                 ?>
             </p>
+            
+            <p>
+                <?php
+                    foreach($recipeDetails as $recipeDetail){
+                        if(str_replace(' ', '', $recipeDetail[0]) == $recipe){
+                            print $recipeDetail[4];
+                        }
+                    }
+                ?>
+            </p>
         </article>
     </body>
 </html>
