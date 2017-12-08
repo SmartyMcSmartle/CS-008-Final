@@ -92,6 +92,10 @@ div{
     margin: auto;
 }
 
+span{
+    font-size: 1pt;
+}
+
 .img-right{
     float: right;
 }
