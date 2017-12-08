@@ -168,9 +168,9 @@ if (isset($_POST["btnSubmit"])) {
         //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
         // 
         // SECTION: 2e Save Data
-        $myFolder = '../';
+        $myFolder = '';
 
-        $myFileName = 'form';
+        $myFileName = 'comment';
 
         $fileExt = '.csv';
 

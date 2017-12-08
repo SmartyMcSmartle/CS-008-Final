@@ -74,7 +74,7 @@ if (isset($_POST["btnSubmit"])) {
     $email = filter_var($_POST["txtEmail"], FILTER_SANITIZE_EMAIL);
     $dataRecord[] = $email;
 
-    if (isset($_POST["chkSubsribeYes"])){
+    if (isset($_POST["chkSubscribeYes"])){
         $subscribeYes=true;
         $totalCheckedSubscribe++;
     }else{
@@ -136,9 +136,9 @@ if (isset($_POST["btnSubmit"])) {
         //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
         // 
         // SECTION: 2e Save Data
-        $myFolder = '../';
+        $myFolder = '';
 
-        $myFileName = 'form';
+        $myFileName = 'newRecipe';
 
         $fileExt = '.csv';
 
