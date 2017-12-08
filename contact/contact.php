@@ -1,7 +1,7 @@
 <?php
 include('../top.php');
 ?>
-<article id="contact">
+<article id="contact2">
     <h2>Contact Us</h2>
     <h3>Have a recipe that you would like to add? Fill out:
         <a class="mainlinks2" href="./recipeForm.php">Recipe Form</a></h3>
