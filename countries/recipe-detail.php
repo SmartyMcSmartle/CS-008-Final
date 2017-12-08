@@ -94,6 +94,16 @@ include('../top.php');
                     }
                 ?>
             </ol>
+            <h3 class="stepsHeader">Yield</h3>
+            <p>
+                <?php
+                    foreach($recipeDetails as $recipeDetail){
+                        if(str_replace(' ', '', $recipeDetail[0]) == $recipe){
+                            print $recipeDetail[2];
+                        }
+                    }
+                ?>
+            </p>
         </article>
     </body>
 </html>
