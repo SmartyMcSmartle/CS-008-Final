@@ -68,7 +68,7 @@ include('../top.php');
                 print str_replace('_', ' ', $recipeDetail[0]);
                 print '">';
                 print '<img class="recipe-link" alt="' . $recipeDetail[0];
-                print '" src="../images/' . str_replace(' ', '', $recipeDetail[0]);
+                print '" src="../images/' . str_replace(' ', '_', $recipeDetail[0]);
                 print '.jpg">';
                 print '</a><figcaption>' . $recipeDetail[0];
                 print '</figcaption></figure>';
