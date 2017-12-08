@@ -48,6 +48,7 @@ h3{
     font-family: didot, serif;
     font-size: 18pt;
     margin: auto;
+    padding: 0.5em;
 }
 
 article{
@@ -225,4 +226,15 @@ p.about{
 .small{
     max-width: 12%;
     display: inline;
+}
+
+#countries .mainlinks{
+    font-weight: bold;
+    color: dimgrey;
+    font-size: 18pt;
+}
+
+.recipe-source{
+    margin-top: 3em;
+    font-size: 5pt;
 }
